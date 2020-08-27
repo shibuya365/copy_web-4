@@ -1,0 +1,38 @@
+/* 1.変数の内容を変更 */
+/* テーマカラーを変更する */
+$theme-colors: (
+  primary: #da6b64,
+  secondary: #ebb94d
+  // main: #222 /* デフォルトにないカラーの追加 */
+);
+
+/* 2.変数の最後にbootstrapをインポート */
+@import "../scss/bootstrap.scss";
+
+/* 3.カスタムコンポーネントを作る */
+/* bootstrapのmixinを使って新しいボタンサイズを作る */
+// .btn-xs {
+//   @include button-size(5px, 10px, 10px, $btn-line-height-sm, $btn-border-radius-sm);
+// }
+// .btn-cart {
+//   @include button-size(10px, 30px, 16px, $btn-line-height-sm, $btn-border-radius-sm);
+// }
+// .btn-block {
+//   @include button-size(10px, 30px, 16px, $btn-line-height-sm, $btn-border-radius-sm);
+// .btn-big {
+//   @include button-size(10px, 30px, 16px, $btn-line-height-sm, $btn-border-radius-sm);
+
+
+
+.btn {
+  color: #ffffff;
+  // background-color: #da6b64;
+  font-size: 12px;
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+.navbar-brand {
+  color: white;
+}

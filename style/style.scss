@@ -1,0 +1,173 @@
+// ベース 要素そのもののデフォルトスタイルを定義します
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+a {
+
+}
+// レイアウト	ページをエリアごとに分割するためのスタイルを定義します
+// モジュール	再利用可能な単位でパーツの見た目を定義します
+// 状態（ステート）	レイアウトやモジュールの特定の状態におけるスタイルを定義します
+// テーマ サイトのルック＆フィールを定義します
+// .c-b-transparent {
+//   background-color: transparent;
+// }
+// #btn-large {
+//   width: 261px;
+//   height: 41px;
+//   display: block;
+// }
+// #btn-small {
+//   display: none;
+//   width: 76px;
+//   height: 75px;
+// }
+
+
+header {
+  > div {
+    > div {
+      a {
+        img{
+          width: 90px;
+        }
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    > .btn {
+      top: 0;
+      right: 0;
+      width: 76px;
+      height: 61px;
+      // display: block;
+    }
+  }
+
+.btn-hdr {
+  width: 261px;
+  height: 41px;
+  // display: none;
+}
+
+
+  .jumbotron {
+    background-image: url(../img/main.jpg);
+    // background: url(../img/main.jpg);
+    // background-repeat: no-repeat;
+    background-size: cover;
+    img {
+      width: 317px;
+      height: 111px;
+    }
+  }
+}
+
+.btn-big {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // color: white;
+  // background-color: #da6b64;
+  // margin: 20px 40px;
+  // display: block;
+  font-size: 18px;
+  height: 94px;
+  max-width: 800px;
+}
+
+.fa-twitter {
+  background-color: #1b95e0;
+  span {
+    font-size: 11px;
+  }
+}
+
+.fa-facebook {
+  background-color: blue;
+  span {
+    font-size: 11px;
+  }
+}
+
+.share {
+  background-color: blue;
+  span {
+    font-size: 11px;
+  }
+}
+
+.parentheses {
+  position:relative;
+  width: 860px;
+  max-width: calc(100% - 40px);
+}
+
+h5 {
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    border-top: 4px solid #ebb94d;
+    border-left: 4px solid #ebb94d;
+    width: 50px;
+    height: 50px;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    border-bottom: 4px solid #ebb94d;
+    border-right: 4px solid #ebb94d;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// PCサイト用
+@media (min-width: 768px) {
+  // #btn-large {
+
+  // }
+  // #btn-small {
+
+  // }
+  header {
+    > div {
+      > div {
+        a {
+          img {
+            width: 128px;
+          }
+        }
+        > .btn {
+
+          // display: block;
+        }
+      }
+      > .btn {
+        // display: none;
+      }
+    }
+  }
+  .parentheses {
+    max-width: calc(100% - 10px);
+  }
+}
