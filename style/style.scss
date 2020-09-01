@@ -1,64 +1,94 @@
 // ベース 要素そのもののデフォルトスタイルを定義します
+* {
+  box-sizing: border-box;
+}
 
 .selector-for-some-widget {
   box-sizing: content-box;
 }
-
-a {
-
-}
 // レイアウト	ページをエリアごとに分割するためのスタイルを定義します
 // モジュール	再利用可能な単位でパーツの見た目を定義します
+.parentheses {
+  position:relative;
+  width: 860px;
+  max-width: calc(100% - 40px);
+}
+.txt-parentheses {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    border-top: 4px solid #ebb94d;
+    border-left: 4px solid #ebb94d;
+    width: 50px;
+    height: 50px;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    border-bottom: 4px solid #ebb94d;
+    border-right: 4px solid #ebb94d;
+    width: 50px;
+    height: 50px;     
+  }
+}
+  
 // 状態（ステート）	レイアウトやモジュールの特定の状態におけるスタイルを定義します
 // テーマ サイトのルック＆フィールを定義します
 // .c-b-transparent {
-//   background-color: transparent;
-// }
-// #btn-large {
-//   width: 261px;
-//   height: 41px;
-//   display: block;
-// }
-// #btn-small {
-//   display: none;
-//   width: 76px;
-//   height: 75px;
-// }
-
-
-header {
-  > div {
-    > div {
-      a {
-        img{
-          width: 90px;
+  //   background-color: transparent;
+  // }
+  // #btn-large {
+    //   width: 261px;
+    //   height: 41px;
+    //   display: block;
+    // }
+    // #btn-small {
+      //   display: none;
+      //   width: 76px;
+      //   height: 75px;
+      // }
+      
+      
+      header {
+        > div {
+          > div {
+            a {
+              img{
+                width: 90px;
+              }
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+          > .btn {
+            top: 0;
+            right: 0;
+            width: 76px;
+            height: 61px;
+            // display: block;
+          }
         }
-      }
-      p {
-        font-size: 12px;
-      }
-    }
-    > .btn {
-      top: 0;
-      right: 0;
-      width: 76px;
-      height: 61px;
-      // display: block;
-    }
-  }
-
+        
 .btn-hdr {
   width: 261px;
   height: 41px;
   // display: none;
 }
-
-
+        
+        
   .jumbotron {
     background-image: url(../img/main.jpg);
-    // background: url(../img/main.jpg);
-    // background-repeat: no-repeat;
     background-size: cover;
+    // background-repeat: no-repeat;
+    background-position: center;
     img {
       width: 317px;
       height: 111px;
@@ -67,13 +97,6 @@ header {
 }
 
 .btn-big {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // color: white;
-  // background-color: #da6b64;
-  // margin: 20px 40px;
-  // display: block;
   font-size: 18px;
   height: 94px;
   max-width: 800px;
@@ -100,34 +123,81 @@ header {
   }
 }
 
-.parentheses {
-  position:relative;
-  width: 860px;
+// intro
+.intro {
+  background-image: url("../img/introbottom.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+// about
+.about_circle {
+  line-height:60px;
+  margin-top: -40px;
+  height: 60px;
+  width: 60px;
+}
+
+.txt-focus {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.aboutbox {
+  width: 1170px;
   max-width: calc(100% - 40px);
 }
 
-h5 {
-  &::before {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    border-top: 4px solid #ebb94d;
-    border-left: 4px solid #ebb94d;
-    width: 50px;
-    height: 50px;
-  }
-  &::after {
-    position: absolute;
-    content: '';
-    bottom: 0;
-    right: 0;
-    border-bottom: 4px solid #ebb94d;
-    border-right: 4px solid #ebb94d;
-    width: 50px;
-    height: 50px;
+// about 2nd
+.aboutsecond {
+  background-image: url(../img/aboutsecondbg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+// bout 3rd
+.aboutthird {
+  background-color: #016ea9;
+  p {
+    font-size: 12px;
   }
 }
+
+// merit
+.learnfromfreelancer {
+  background-image: url("../img/learnfromfreelancer.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 120px;
+}
+
+.learnfromprojects {
+  background-image: url("../img/learnfromprojects.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 120px;
+}
+
+.actuallyfree {
+  background-image: url("../img/actuallyfree.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 120px;
+}
+
+// teacher
+.teacher {
+  background-image: url("../img/teacherbg.jpg");
+  background-size: cover;
+  background-position: center;
+  img {
+    margin-top: -60px;
+    height: 120px;
+    width: 120px;
+  }
+}
+
 
 
 
@@ -143,12 +213,19 @@ h5 {
 
 // PCサイト用
 @media (min-width: 768px) {
-  // #btn-large {
 
-  // }
-  // #btn-small {
+  html {
+    font-size: 125%;
+  }
 
-  // }
+  .parentheses {
+    max-width: calc(100% - 10px);
+  }
+
+  .txt-parentheses {
+    font-size: 24px;
+  }
+
   header {
     > div {
       > div {
@@ -157,17 +234,33 @@ h5 {
             width: 128px;
           }
         }
-        > .btn {
-
-          // display: block;
-        }
-      }
-      > .btn {
-        // display: none;
       }
     }
   }
-  .parentheses {
-    max-width: calc(100% - 10px);
+  .about_circle {
+    margin-top: -40px;
+    line-height:80px;
+    height: 80px;
+    width: 80px;
+  }
+
+  // intro
+  .intro {
+    height: 587px;
+  }
+
+  // about 3rd
+  .aboutthird {
+    background-color: #016ea9;
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .teacher {
+    img {
+      height: 198px;
+      width: 198px;
+    }
   }
 }

@@ -1,5 +1,36 @@
+* {
+  box-sizing: border-box; }
+
 .selector-for-some-widget {
   box-sizing: content-box; }
+
+.parentheses {
+  position: relative;
+  width: 860px;
+  max-width: calc(100% - 40px); }
+
+.txt-parentheses {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold; }
+  .txt-parentheses::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    border-top: 4px solid #ebb94d;
+    border-left: 4px solid #ebb94d;
+    width: 50px;
+    height: 50px; }
+  .txt-parentheses::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    border-bottom: 4px solid #ebb94d;
+    border-right: 4px solid #ebb94d;
+    width: 50px;
+    height: 50px; }
 
 header > div > div a img {
   width: 90px; }
@@ -15,7 +46,8 @@ header .btn-hdr {
   height: 41px; }
 header .jumbotron {
   background-image: url(../img/main.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
   header .jumbotron img {
     width: 317px;
     height: 111px; }
@@ -40,35 +72,91 @@ header .jumbotron {
   .share span {
     font-size: 11px; }
 
-.parentheses {
-  position: relative;
-  width: 860px;
+.intro {
+  background-image: url("../img/introbottom.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.about_circle {
+  line-height: 60px;
+  margin-top: -40px;
+  height: 60px;
+  width: 60px; }
+
+.txt-focus {
+  padding: 0;
+  margin: 0 auto; }
+
+.aboutbox {
+  width: 1170px;
   max-width: calc(100% - 40px); }
 
-h5::before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  border-top: 4px solid #ebb94d;
-  border-left: 4px solid #ebb94d;
-  width: 50px;
-  height: 50px; }
-h5::after {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  right: 0;
-  border-bottom: 4px solid #ebb94d;
-  border-right: 4px solid #ebb94d;
-  width: 50px;
-  height: 50px; }
+.aboutsecond {
+  background-image: url(../img/aboutsecondbg.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.aboutthird {
+  background-color: #016ea9; }
+  .aboutthird p {
+    font-size: 12px; }
+
+.learnfromfreelancer {
+  background-image: url("../img/learnfromfreelancer.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 120px; }
+
+.learnfromprojects {
+  background-image: url("../img/learnfromprojects.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 120px; }
+
+.actuallyfree {
+  background-image: url("../img/actuallyfree.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 120px; }
+
+.teacher {
+  background-image: url("../img/teacherbg.jpg");
+  background-size: cover;
+  background-position: center; }
+  .teacher img {
+    margin-top: -60px;
+    height: 120px;
+    width: 120px; }
 
 @media (min-width: 768px) {
+  html {
+    font-size: 125%; }
+
+  .parentheses {
+    max-width: calc(100% - 10px); }
+
+  .txt-parentheses {
+    font-size: 24px; }
+
   header > div > div a img {
     width: 128px; }
 
-  .parentheses {
-    max-width: calc(100% - 10px); } }
+  .about_circle {
+    margin-top: -40px;
+    line-height: 80px;
+    height: 80px;
+    width: 80px; }
+
+  .intro {
+    height: 587px; }
+
+  .aboutthird {
+    background-color: #016ea9; }
+    .aboutthird p {
+      font-size: 16px; }
+
+  .teacher img {
+    height: 198px;
+    width: 198px; } }
 
 /*# sourceMappingURL=style.css.map */
