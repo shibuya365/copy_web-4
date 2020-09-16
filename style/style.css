@@ -77,9 +77,11 @@ header .jumbotron {
   background-size: cover;
   background-position: center; }
 
+.about .about_circle {
+  margin-top: -40px; }
+
 .about_circle {
   line-height: 60px;
-  margin-top: -40px;
   height: 60px;
   width: 60px; }
 
@@ -128,6 +130,13 @@ header .jumbotron {
     height: 120px;
     width: 120px; }
 
+.qa .txt-parentheses::before {
+  border-top: 4px solid white;
+  border-left: 4px solid white; }
+.qa .txt-parentheses::after {
+  border-bottom: 4px solid white;
+  border-right: 4px solid white; }
+
 @media (min-width: 768px) {
   html {
     font-size: 125%; }
@@ -141,8 +150,10 @@ header .jumbotron {
   header > div > div a img {
     width: 128px; }
 
+  .about .about_circle {
+    margin-top: -40px; }
+
   .about_circle {
-    margin-top: -40px;
     line-height: 80px;
     height: 80px;
     width: 80px; }

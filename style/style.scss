@@ -131,9 +131,15 @@
 }
 
 // about
+
+.about {
+  .about_circle {
+    margin-top: -40px;
+  }
+}
+
 .about_circle {
   line-height:60px;
-  margin-top: -40px;
   height: 60px;
   width: 60px;
 }
@@ -198,6 +204,21 @@
   }
 }
 
+// Q & A
+.qa {
+  .txt-parentheses {
+    &::before {
+      border-top: 4px solid white;
+      border-left: 4px solid white;  
+    }
+    &::after {
+      border-bottom: 4px solid white;
+      border-right: 4px solid white;
+    }
+
+  }
+}
+
 
 
 
@@ -237,8 +258,13 @@
       }
     }
   }
+
+  .about {
+    .about_circle {
+      margin-top: -40px;
+    }
+  }
   .about_circle {
-    margin-top: -40px;
     line-height:80px;
     height: 80px;
     width: 80px;
@@ -264,3 +290,5 @@
     }
   }
 }
+
+// Q & A
