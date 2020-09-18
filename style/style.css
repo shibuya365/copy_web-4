@@ -169,12 +169,19 @@ header .jumbotron {
 .flow .pc {
   width: 20px;
   height: 20px; }
-.flow img {
+
+.accordion img {
   width: 30px;
   height: 30px; }
-.flow .btn {
+.accordion .btn {
+  width: 100%;
   color: black;
   font-size: 16px; }
+
+.bankoku {
+  background-image: url("../img/bangkokbg.jpg");
+  background-size: cover;
+  background-position: center; }
 
 @media (min-width: 768px) {
   html {

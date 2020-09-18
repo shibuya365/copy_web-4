@@ -266,17 +266,25 @@ li {
     width: 20px;
     height: 20px;
   }
+}
+.accordion {  
   img {
     width: 30px;
     height: 30px;
   }
   .btn {
+    width: 100%;
     color: black;
     font-size: 16px;
   }
 }
 
-
+// bankoku
+.bankoku {
+  background-image: url("../img/bangkokbg.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
 
 
