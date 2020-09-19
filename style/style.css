@@ -207,6 +207,13 @@ header .jumbotron {
     border-bottom: 4px solid white;
     border-right: 4px solid white; }
 
+.form .form-box {
+  max-width: 716px; }
+.form button {
+  font-size: 18px; }
+.form .form-q {
+  height: 100px; }
+
 @media (min-width: 768px) {
   html {
     font-size: 125%; }
