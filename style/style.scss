@@ -17,6 +17,7 @@ li {
   width: 860px;
   max-width: calc(100% - 40px);
 }
+
 .txt-parentheses {
   text-align: center;
   font-size: 15px;
@@ -298,6 +299,30 @@ li {
   .about_circle {
     width: 60px;
     height: 60px;
+  }
+  .special_ciecle {
+    max-width: 220px;
+    // height: 220px;
+    padding: 15px;
+    // line-height: 220px;
+    // display: table-cell;
+    // vertical-align: middle;
+  }
+}
+
+.not_volunteer {
+  background-image: url("../img/specialdetail.jpg");
+  background-size: cover;
+  background-position: center;
+  .txt-parentheses {
+    &::before {
+      border-top: 4px solid white;
+      border-left: 4px solid white;
+    }
+    &::after {
+      border-bottom: 4px solid white;
+      border-right: 4px solid white; 
+    }
   }
 }
 

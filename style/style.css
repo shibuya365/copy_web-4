@@ -192,6 +192,20 @@ header .jumbotron {
 .special .about_circle {
   width: 60px;
   height: 60px; }
+.special .special_ciecle {
+  max-width: 220px;
+  padding: 15px; }
+
+.not_volunteer {
+  background-image: url("../img/specialdetail.jpg");
+  background-size: cover;
+  background-position: center; }
+  .not_volunteer .txt-parentheses::before {
+    border-top: 4px solid white;
+    border-left: 4px solid white; }
+  .not_volunteer .txt-parentheses::after {
+    border-bottom: 4px solid white;
+    border-right: 4px solid white; }
 
 @media (min-width: 768px) {
   html {
