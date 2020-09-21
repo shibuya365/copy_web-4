@@ -214,6 +214,9 @@ header .jumbotron {
 .form .form-q {
   height: 100px; }
 
+footer a {
+  color: #337ab7; }
+
 @media (min-width: 768px) {
   html {
     font-size: 125%; }
