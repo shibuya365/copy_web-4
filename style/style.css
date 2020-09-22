@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 li {
   list-style: none; }
 
@@ -216,6 +219,15 @@ header .jumbotron {
 
 footer a {
   color: #337ab7; }
+
+.pagetop {
+  position: fixed;
+  cursor: pointer;
+  right: 7vw;
+  bottom: 7vh;
+  background-color: #ececec; }
+  .pagetop i {
+    font-size: 5vw; }
 
 @media (min-width: 768px) {
   html {
